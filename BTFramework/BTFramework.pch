@@ -1,0 +1,35 @@
+//
+//  BTFramework.pch
+//  BTFramework
+//
+//  Created by aaron on 16/7/27.
+//  Copyright © 2016年 aaron. All rights reserved.
+//
+
+#ifndef BTFramework_pch
+#define BTFramework_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreText/CoreText.h>
+#import <CoreData/CoreData.h>
+#import "GlobalMacros.h"
+
+
+// debug log helper
+#if DEBUG || BETA
+#define LOGD(xx, ...)  NSLog(@"%s(%zd)[d]: " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define LOGD(xx, ...)  (void)0
+#endif
+
+/**
+ *  测试开关
+ */
+#if DEBUG
+#define RABBIT_TEST  1
+#else
+#define RABBIT_TEST  0
+#endif
+
+#endif /* BTFramework_pch */
