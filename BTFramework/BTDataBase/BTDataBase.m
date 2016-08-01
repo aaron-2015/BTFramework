@@ -7,6 +7,7 @@
 //
 
 #import "BTDataBase.h"
+#import "NSObject+BTObjectMap.h"
 
 #define DATABASE_VERSION_KEY @"database_version"
 

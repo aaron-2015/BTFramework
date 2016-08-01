@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "BTDataBaseManager.h"
+#import "BTDataBase.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) BTDataBaseManager *dataBsaeManager;
+@property (nonatomic, strong) BTDataBase *dataBase;
 
 @end
 
@@ -17,6 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    _dataBsaeManager = [BTDataBaseManager shareManager];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

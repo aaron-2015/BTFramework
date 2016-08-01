@@ -11,23 +11,12 @@
 
 static NSString * const DBName_TokenInfo = @"TokenInfo";
 static NSString * const DBName_CurrUserInfo = @"CurrUserInfo";
-static NSString * const DBName_UserInfo = @"UserInfo";
-static NSString * const DBName_UserTrackRelation = @"UserTrackRelation";
-static NSString * const DBName_TrackInfo = @"TrackInfo";
-static NSString * const DBName_TrackFile = @"TrackFile";
-static NSString * const DBName_TrackPhoto = @"TrackPhoto";
-static NSString * const DBName_TrackTemp = @"TrackTemp";
-static NSString * const DBName_Summary_TrackRelation = @"SummaryTrackRelation";
-static NSString * const DBName_Summary_BikeTeamTrackRelation = @"SummaryBikeTeamTrackRelation";
-static NSString * const DBName_Summary_Dynamic = @"SummaryDynamic";
-static NSString * const DBName_Team_Dynamic = @"TeamDynamic";
-static NSString * const DBName_Recomment_Dynamic = @"recommentDynamic";
 
 @interface BTDataBase : NSObject
 
 @property (nonatomic, strong) NSString *version;
 
-+ (instancetype) createDataBase;
++ (instancetype)createDataBase;
 
 - (NSDictionary *)getInsertKeysValuesStringByParam:(NSDictionary *)dic;
 

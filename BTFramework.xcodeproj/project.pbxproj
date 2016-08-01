@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		33ED9EFBD321ADDF658476A8 /* libPods-BTFrameworkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A270490C9C94EAB4440E4278 /* libPods-BTFrameworkTests.a */; };
+		9389311F1D4EF97B00C710D5 /* NSDate+BTExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 938931151D4EF97B00C710D5 /* NSDate+BTExtend.m */; };
+		938931201D4EF97B00C710D5 /* NSObject+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 938931171D4EF97B00C710D5 /* NSObject+Keyboard.m */; };
+		938931211D4EF97B00C710D5 /* NSString+BTExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 938931191D4EF97B00C710D5 /* NSString+BTExtend.m */; };
+		938931221D4EF97B00C710D5 /* UISearchBar+BTExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9389311B1D4EF97B00C710D5 /* UISearchBar+BTExtend.m */; };
+		938931261D4EFC7700C710D5 /* NSObject+BTObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 938931251D4EFC7700C710D5 /* NSObject+BTObjectMap.m */; };
+		9389312C1D4F239900C710D5 /* BTDataBaseTokenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9389312B1D4F239900C710D5 /* BTDataBaseTokenInfo.m */; };
 		93BCB7811D489FD7006A5713 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BCB7801D489FD7006A5713 /* main.m */; };
 		93BCB7841D489FD7006A5713 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BCB7831D489FD7006A5713 /* AppDelegate.m */; };
 		93BCB7871D489FD7006A5713 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BCB7861D489FD7006A5713 /* ViewController.m */; };
@@ -20,7 +26,6 @@
 		93BCB7CF1D48A407006A5713 /* BTDataBaseCurrUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BCB7B61D48A407006A5713 /* BTDataBaseCurrUserInfo.m */; };
 		93BCB7D01D48A407006A5713 /* BTDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BCB7B81D48A407006A5713 /* BTDataBaseManager.m */; };
 		93BCB8121D48AC61006A5713 /* BTColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BCB7EC1D48AC61006A5713 /* BTColorManager.m */; };
-		93BCB81D1D48AC61006A5713 /* NotificationHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BCB80A1D48AC61006A5713 /* NotificationHandle.m */; };
 		B2685532034EDD6CBE14D186 /* libPods-BTFrameworkUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DF940FC6A2720E3FBFF823 /* libPods-BTFrameworkUITests.a */; };
 		F2A2819DB5076AF187479FC4 /* libPods-BTFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 394F9FDC08B6089DBB391992 /* libPods-BTFramework.a */; };
 /* End PBXBuildFile section */
@@ -50,6 +55,18 @@
 		717CA86A56729B03D6D7839E /* Pods-BTFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTFrameworkTests/Pods-BTFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		83FB7F47B446062BA124E433 /* Pods-BTFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTFrameworkTests/Pods-BTFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8BE588BD01635B4C5F0D1444 /* Pods-BTFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTFramework/Pods-BTFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		938931141D4EF97B00C710D5 /* NSDate+BTExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BTExtend.h"; sourceTree = "<group>"; };
+		938931151D4EF97B00C710D5 /* NSDate+BTExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BTExtend.m"; sourceTree = "<group>"; };
+		938931161D4EF97B00C710D5 /* NSObject+Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Keyboard.h"; sourceTree = "<group>"; };
+		938931171D4EF97B00C710D5 /* NSObject+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Keyboard.m"; sourceTree = "<group>"; };
+		938931181D4EF97B00C710D5 /* NSString+BTExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BTExtend.h"; sourceTree = "<group>"; };
+		938931191D4EF97B00C710D5 /* NSString+BTExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BTExtend.m"; sourceTree = "<group>"; };
+		9389311A1D4EF97B00C710D5 /* UISearchBar+BTExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+BTExtend.h"; sourceTree = "<group>"; };
+		9389311B1D4EF97B00C710D5 /* UISearchBar+BTExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+BTExtend.m"; sourceTree = "<group>"; };
+		938931241D4EFC7700C710D5 /* NSObject+BTObjectMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BTObjectMap.h"; sourceTree = "<group>"; };
+		938931251D4EFC7700C710D5 /* NSObject+BTObjectMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BTObjectMap.m"; sourceTree = "<group>"; };
+		9389312A1D4F239900C710D5 /* BTDataBaseTokenInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDataBaseTokenInfo.h; sourceTree = "<group>"; };
+		9389312B1D4F239900C710D5 /* BTDataBaseTokenInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTDataBaseTokenInfo.m; sourceTree = "<group>"; };
 		93BCB77C1D489FD7006A5713 /* BTFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BCB7801D489FD7006A5713 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93BCB7821D489FD7006A5713 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,8 +98,6 @@
 		93BCB8071D48AC61006A5713 /* BTUMUserEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTUMUserEvent.h; sourceTree = "<group>"; };
 		93BCB8081D48AC61006A5713 /* GlobalMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalMacros.h; sourceTree = "<group>"; };
 		93BCB8091D48AC61006A5713 /* NotificationHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandle.h; sourceTree = "<group>"; };
-		93BCB80A1D48AC61006A5713 /* NotificationHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHandle.m; sourceTree = "<group>"; };
-		93BCB80B1D48AC61006A5713 /* ResponseKeyDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseKeyDefine.h; sourceTree = "<group>"; };
 		A270490C9C94EAB4440E4278 /* libPods-BTFrameworkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BTFrameworkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACEB4D1BBEF8CCE105E4043 /* Pods-BTFrameworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTFrameworkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTFrameworkUITests/Pods-BTFrameworkUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +140,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		938931111D4EF97B00C710D5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				938931141D4EF97B00C710D5 /* NSDate+BTExtend.h */,
+				938931151D4EF97B00C710D5 /* NSDate+BTExtend.m */,
+				938931161D4EF97B00C710D5 /* NSObject+Keyboard.h */,
+				938931171D4EF97B00C710D5 /* NSObject+Keyboard.m */,
+				938931181D4EF97B00C710D5 /* NSString+BTExtend.h */,
+				938931191D4EF97B00C710D5 /* NSString+BTExtend.m */,
+				9389311A1D4EF97B00C710D5 /* UISearchBar+BTExtend.h */,
+				9389311B1D4EF97B00C710D5 /* UISearchBar+BTExtend.m */,
+				938931241D4EFC7700C710D5 /* NSObject+BTObjectMap.h */,
+				938931251D4EFC7700C710D5 /* NSObject+BTObjectMap.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		93BCB7731D489FD7006A5713 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +182,7 @@
 		93BCB77E1D489FD7006A5713 /* BTFramework */ = {
 			isa = PBXGroup;
 			children = (
+				938931111D4EF97B00C710D5 /* Category */,
 				93BCB7DD1D48AC61006A5713 /* Common */,
 				93BCB7B21D48A407006A5713 /* BTDataBase */,
 				93BCB7821D489FD7006A5713 /* AppDelegate.h */,
@@ -199,6 +232,8 @@
 				93BCB7B41D48A407006A5713 /* BTDataBase.m */,
 				93BCB7B71D48A407006A5713 /* BTDataBaseManager.h */,
 				93BCB7B81D48A407006A5713 /* BTDataBaseManager.m */,
+				9389312A1D4F239900C710D5 /* BTDataBaseTokenInfo.h */,
+				9389312B1D4F239900C710D5 /* BTDataBaseTokenInfo.m */,
 				93BCB7B51D48A407006A5713 /* BTDataBaseCurrUserInfo.h */,
 				93BCB7B61D48A407006A5713 /* BTDataBaseCurrUserInfo.m */,
 			);
@@ -216,8 +251,6 @@
 				93BCB8071D48AC61006A5713 /* BTUMUserEvent.h */,
 				93BCB8081D48AC61006A5713 /* GlobalMacros.h */,
 				93BCB8091D48AC61006A5713 /* NotificationHandle.h */,
-				93BCB80A1D48AC61006A5713 /* NotificationHandle.m */,
-				93BCB80B1D48AC61006A5713 /* ResponseKeyDefine.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -496,13 +529,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938931201D4EF97B00C710D5 /* NSObject+Keyboard.m in Sources */,
 				93BCB7CF1D48A407006A5713 /* BTDataBaseCurrUserInfo.m in Sources */,
+				938931221D4EF97B00C710D5 /* UISearchBar+BTExtend.m in Sources */,
+				938931211D4EF97B00C710D5 /* NSString+BTExtend.m in Sources */,
+				938931261D4EFC7700C710D5 /* NSObject+BTObjectMap.m in Sources */,
 				93BCB7871D489FD7006A5713 /* ViewController.m in Sources */,
 				93BCB7D01D48A407006A5713 /* BTDataBaseManager.m in Sources */,
 				93BCB7841D489FD7006A5713 /* AppDelegate.m in Sources */,
+				9389312C1D4F239900C710D5 /* BTDataBaseTokenInfo.m in Sources */,
 				93BCB7CE1D48A407006A5713 /* BTDataBase.m in Sources */,
-				93BCB81D1D48AC61006A5713 /* NotificationHandle.m in Sources */,
 				93BCB7811D489FD7006A5713 /* main.m in Sources */,
+				9389311F1D4EF97B00C710D5 /* NSDate+BTExtend.m in Sources */,
 				93BCB8121D48AC61006A5713 /* BTColorManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
