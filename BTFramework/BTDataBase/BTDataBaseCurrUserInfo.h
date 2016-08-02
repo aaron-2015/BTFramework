@@ -23,4 +23,8 @@
 @property (nonatomic, copy) NSData *brand_list_data;         ///<产品库列表数据
 @property (nonatomic, copy) NSData *achievement_medal_data;  ///<成就与勋章列表
 
+
+//数据库1.0.2新增字段
+@property (nonatomic, strong) NSString *userYear;
+
 @end

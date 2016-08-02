@@ -8,10 +8,11 @@
 
 #import "BTDataBase.h"
 #import "NSObject+BTObjectMap.h"
+#import <YYModel/YYModel.h>
 
 #define DATABASE_VERSION_KEY @"database_version"
 
-static NSString * const DB_Version = @"1.0.0"; //app_version:1.0.0
+static NSString * const DB_Version = @"1.0.2"; //app_version:1.0.0
 
 @interface BTDataBase () {
     FMDatabaseQueue *databaseQueue;
@@ -46,6 +47,7 @@ static NSString * const DB_Version = @"1.0.0"; //app_version:1.0.0
 - (void)updateDataBase {
 
     [self updateVersion_0_8_7_2];
+    [self updateVersion_0_1_0_2];
 }
 
 //添加用户缓存数据
@@ -61,6 +63,15 @@ static NSString * const DB_Version = @"1.0.0"; //app_version:1.0.0
         
         //成就与勋章列表
         query = [NSMutableString stringWithFormat:@"ALTER TABLE %@ ADD %@ %@", DBName_CurrUserInfo, @"achievement_medal_data", @"BLOB"];
+        [db executeUpdate:query];
+    }];
+}
+
+//添加用户年份，1.0.2版本升级
+- (void)updateVersion_0_1_0_2 {
+    [databaseQueue inDatabase:^(FMDatabase *db) {
+        
+        NSMutableString *query = [NSMutableString stringWithFormat:@"ALTER TABLE %@ ADD %@ %@", DBName_CurrUserInfo, @"userYear", @"varchar(255)"];
         [db executeUpdate:query];
     }];
 }
@@ -129,6 +140,8 @@ static NSString * const DB_Version = @"1.0.0"; //app_version:1.0.0
 {
     NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
     FMDatabaseQueue *dbQueue = [FMDatabaseQueue databaseQueueWithPath:[documentPath stringByAppendingFormat:@"/%@.sqlite",name]];
+    
+    LOGD(@"db path:%@",documentPath);
     
     return dbQueue;
 }
@@ -306,7 +319,7 @@ static NSString * const DB_Version = @"1.0.0"; //app_version:1.0.0
     FMResultSet *set = [self getResultSetForTableName:tableName withKey:key andValue:value];
     id obj = nil;
     if ([set next]) {
-        obj = [[class alloc]initWithDictionary:[set resultDictionary]];
+        obj = [class yy_modelWithDictionary:[set resultDictionary]];
     }
     [set close];
     return obj;
